@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
+    overflow: hidden;
+}
+.project{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 300px auto;
+background-color: #211f1e;
+box-shadow: 0 0 10px rgba(0, 0, 0, 30%);
+color: white;
+width: 300px;
+height: 400px;
+text-align: center;
+border-radius: 8px;
+}
+.container .showcolor {
+    width: 120px;
+    height: 120px;
+    border:  8px solid transparent;
+    outline:  8px solid white;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .showcolor span {
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: #e54562;
+    transition: 0.3s;
+}
+.container .showcode {
+    margin: 0 auto;
+    padding: 15px 10px ;
+    width: 200px;
+    border: 2px dashed white;
+    background-color: transparent;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    outline: none;
+}
+
+.container .btns{
+ display: flex;
+ justify-content: space-around;
+}
+.container .btns .generate ,
+.container .btns .copy {
+    padding: 8px 15px;
+    border: 2px solid #4caf50;
+    color: #211f1e;
+    background-color: #4caf50;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+.container .btns .copy {
+    background-color: transparent;
+    color: #4caf50;
+}
+.container .alertCopyed{
+    background-color: #211f1e;
+    padding: 8px 20px;
+    position: absolute;
+    top: 20px;
+    right: -300px;
+    transition: 0.3s;
+}
